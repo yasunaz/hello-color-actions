@@ -31,3 +31,6 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: "us-east-1" # optional: defaults to us-east-1
+      - name: Display S3 Object URL
+        run: echo "https://color-hello-world.s3.amazonaws.com/index.html"
+        id: display-url
